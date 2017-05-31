@@ -147,6 +147,7 @@ return [WXApi handleOpenURL:url delegate:[WXApiManager sharedManager]];
 public static void init(AndroidJavaObject activity, String gameID, String gameName, bool isLandscape, NKListener listener)
 ```
 说明：
+
 | 参数        | 类型   |  说明  |适用平台
 | --------   | -----:  | :----:  |:----:  |
 | activity     | AndroidJavaObject |   Android启动时的Activity    | Android
@@ -188,6 +189,7 @@ json object仅当errorcode 为0时才保证有效，如果errorcode不为0，请
 public static void login(String lineID, String lineName)
 ```
 说明：
+
 | 参数        | 类型   |  说明  |适用平台
 | --------   | -----:  | :----:  |:----:  |
 | lineID     | String |   服务器id    | Android/iOS
@@ -202,6 +204,7 @@ NKBaseSDKForAndroid.login("Line1", "游戏1区");
 public static void selectLine(String lineID, String lineName)
 ```
 说明：
+
 | 参数        | 类型   |  说明  |适用平台
 | --------   | -----:  | :----:  |:----:  |
 | lineID     | String |   服务器id    | Android/iOS
@@ -211,6 +214,7 @@ public static void selectLine(String lineID, String lineName)
 public static void createRole(String roleID, String roleName, String roleLevel, String lineID, String lineName, String guildName, long roleCT)
 ```
 说明：
+
 | 参数        | 类型   |  说明  |适用平台
 | --------   | -----:  | :----:  |:----:  |
 | roleID     | String |   角色id    | Android
@@ -240,6 +244,7 @@ public static void enterGame()
 public static void pay(int amount,int exchangeRatio,String moneyName,String extra,String productId,String productName)
 ```
 说明：
+
 | 参数        | 类型   |  说明  |适用平台
 | --------   | -----:  | :----:  |:----:  |
 | amount     | int |   商品价格，单位为分    | Android/iOS
@@ -261,6 +266,7 @@ public static void logout()
 public static void switchAccount(String lineID, String lineName)
 ```
 说明：
+
 | 参数        | 类型   |  说明  |适用平台
 | --------   | -----:  | :----:  |:----:  |
 | lineID     | String |   服务器id    | Android/iOS
